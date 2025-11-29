@@ -1,0 +1,6 @@
+{
+  "name": "elish-blog",
+  "compatibility_date": "2025-11-29",
+  "pages_build_output_dir": "./dist",
+  "send_metrics": false
+}
