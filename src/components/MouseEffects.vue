@@ -74,7 +74,8 @@ const createTrailParticle = (x: number, y: number) => {
       life: 60,
       velocityX: (Math.random() - 0.5) * 6,
       velocityY: (Math.random() - 0.5) * 6,
-      rotation: Math.random() * 360
+      rotation: Math.random() * 360,
+      scale: 1.0 // 添加缺失的scale属性，初始值为1.0
     }
     
     trailParticles.value.push(trail)
