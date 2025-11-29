@@ -9,10 +9,11 @@
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite preview",
     "build-only": "vite build",
+    "preview": "vite preview",
     "type-check": "vue-tsc --build",
-    "deploy": "npm run build && npx wrangler deploy --assets=./dist"
+    "deploy": "npm run build",
+    "deploy:github": "npm run build && echo 'Push to GitHub to trigger automatic deployment via GitHub Actions'"
   },
   "dependencies": {
     "animejs": "^4.2.2",
